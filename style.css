@@ -1,0 +1,183 @@
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  /* Bagian Header Logo*/
+  
+  .header {
+    background-color: #404146;
+    color: #fff;
+    height: 90px;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 27px;
+    letter-spacing: 7px;
+    padding: 30px 30px;
+  }
+  
+  .header-list li {
+    float: left;
+    padding: 35px 20px;
+  }
+
+  /* Bagian Ninja Ken Content Header */
+
+  .main {
+    padding: 80px 80px;
+  }
+  
+  .copy-container {
+    position: relative;
+  }
+  .copy-container h1 {
+    font-size: 140px;
+    text-align: center;
+    color: #404146;
+  }
+  
+  .copy-container h2 {
+    position: absolute;
+    top: 135px;
+    left: 670px;
+    font-size: 50px;
+    font-family: "Poppins Thin";
+    text-align: center;
+    letter-spacing: 3px;
+    color: #404146;
+  }
+  
+  .copy-container span {
+    font-family: Georgia;
+    font-size: 110px;
+    color: #F1D00E;
+  }
+
+  .copy-container img {
+    position: relative;
+    width: 15%;
+    left: 725px;
+    padding-bottom: 60px;
+  }
+
+  /* Bagian Tentang Saya */
+
+  .lesson-wrapper {
+    height: auto;
+    width: auto;
+    padding-bottom: 60px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+
+  .container {
+    width: 1100px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .heading {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-family: Poppins;
+  }
+
+  /* Bagian Proyek Contoh */
+
+  .contents {
+    height: 500px;
+    margin-top: 100px;
+  }
+  
+  .section-title {
+    font-family: Poppins;
+    font-size: 25px;
+    padding-bottom: 15px;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+  
+  .contents-item {
+    position: relative;
+    float: left;
+    width: 16%;
+    left: 345px;
+    padding: 50px 50px;
+    margin: 0 auto;
+  }
+  
+  .contents-item img {
+    position: relative;
+    width: 100%;
+  }
+
+  .contents-item p {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Bagian Contact Form */
+  .contact-form {
+    height: 500px;
+    text-align: center;
+    padding-top: 80px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Tambahkan CSS untuk tags <input> dan <textarea> */
+  input, textarea {
+    width: 700px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+  
+  /* Tambahkan CSS untuk contact-submit */
+  .contact-submit {
+    background-color: #F7E989;
+    color: #000000;
+    width: 350px;
+    border-radius: 10px;
+  }
+ /* Bagian Footer */ 
+  .footer {
+    background-color: #7C7D82;
+    color: #fff;
+    height: 120px;
+    padding: 40px;
+  }
+  
+  .footer-logo {
+    float: left;
+    font-size: 32px;
+    letter-spacing: 7px;
+    font-weight: bold;
+  }
+  
+  .footer-list {
+    float: right;
+  }
+  
+  .footer-list li {
+    padding-bottom: 20px;
+  }
+  

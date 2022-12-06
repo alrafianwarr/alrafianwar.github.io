@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NINJA KEN</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 <!-- Bagian Header -->
-    <div class="header">
+  <header>
+    <div class="container">
         <div class="header-logo"><b>NINJA KEN</b></div>
+        <span class="fa fa-bars menu-icon"></span>
         <div class="header-list">
-          <ul>
-            <li>Tentang Saya</li>
-            <li>Proyek Contoh</li>
-            <li>Hubungi Saya</li>
-          </ul>
+          <a href="#">Tentang Saya</a>
+          <a href="#">Proyek Contoh</a>    
+          <a href="#">Hubungi Saya</a>
         </div>
       </div>
+    </header>
 <!--Bagian Main -->
-      <div class="main">
-        <div class="copy-container">
+      <div class="top-wrapper">
+        <div class="container">
           <h1>NINJA KEN<span>.</span></h1>
           <h2>MY PORTFOLIO</h2>
           <img src="img/Ninja.png" alt="">
@@ -37,32 +40,49 @@
           </div>
         </div>
 
-        <div class="contents">
-          <h3 class="section-title">Proyek Contoh</h3>
-          <div class="contents-item">
-            <img src="img/1.png">
-            <p>Image 1</p>
-          </div>
-          <div class="contents-item">
-            <img src="img/2.png">
-            <p>Image 2</p>
-          </div>
-          <div class="contents-item">
-            <img src="img/3.png">
-            <p>Image 3</p>
+        <div class="contents-wrapper">
+          <div class="container">
+            <div class="heading">
+              <h3>Proyek Contoh</h3>
+            </div>
+            <div class="contents">
+              <div class="content">
+                <div class="contents-item">
+                  <img src="img/1.png">
+                  <p>Image 1</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item">
+                  <img src="img/2.png">
+                  <p>Image 2</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item">
+                  <img src="img/3.png">
+                  <p>Image 3</p>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
           </div>
         </div>
         
-        <div class="contact-form">
-          <h3 class="section-title">Hubungi Saya</h3>
-          <input type="text" placeholder="Email (Diperlukan)"><br>
-          <textarea placeholder="Message (Diperlukan)"></textarea><br>
-          <input class="contact-submit" type="submit" value="Kirim" />
-          
+        <div class="message-wrapper">
+          <div class="container">
+            <div class="heading">
+              <h3>Hubungi Saya</h3>
+            </div>
+            <input type="text" placeholder="Email (Diperlukan)"><br>
+            <textarea placeholder="Message (Diperlukan)"></textarea><br>
+            <input class="contact-submit" type="submit" value="Kirim" />
+          </div>
         </div>
       </div>
 <!-- Bagian Footer -->
-      <div class="footer">
+  <footer>
+      <div class="container">
         <div class="footer-logo">NINJA KEN</div>
         <div class="footer-list">
           <ul>
@@ -72,5 +92,6 @@
           </ul>
         </div>
       </div>
+    </footer>
 </body>
 </html>

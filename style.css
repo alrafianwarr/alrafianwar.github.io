@@ -75,6 +75,7 @@
     padding: 50px 0 50px 0;
     color: white;
     text-align: center;
+    transition: all 0.5s;
   }
   
   .top-wrapper h1 {

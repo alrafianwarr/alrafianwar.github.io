@@ -1,6 +1,8 @@
+  * {
+  box-sizing: border-box;
+  }
 
-
-body {
+  body {
     margin: 0;
     font-family: sans-serif;
   }
@@ -8,17 +10,31 @@ body {
   a {
     text-decoration: none;
   }
-  
+
   li {
     list-style: none;
   }
 
+  .clear {
+    clear: left;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
   /* Bagian Header Logo*/
   
-  .header {
+  header {
     background-color: #404146;
     color: #fff;
     height: 90px;
+    width: 100%;
+    top: 0;
+    z-index: 10;
   }
   
   .header-logo {
@@ -28,64 +44,70 @@ body {
     padding: 30px 30px;
   }
   
-  .header-list li {
+  .header-list {
     float: left;
     padding: 35px 20px;
   }
 
+  .header-list a {
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+
+  .header-list a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 35px 0;
+    /* Gantikan property display ke none */
+    display: none;
+  }
+  
   /* Bagian Ninja Ken Content Header */
 
-  .main {
-    padding: 80px 80px;
+  .top-wrapper {
+    padding: 50px 0 50px 0;
+    color: white;
+    text-align: center;
   }
   
-  .copy-container {
-    position: relative;
-  }
-  .copy-container h1 {
+  .top-wrapper h1 {
     font-size: 140px;
-    text-align: center;
     color: #404146;
   }
-  
-  .copy-container h2 {
-    position: absolute;
-    top: 135px;
-    left: 670px;
-    font-size: 50px;
-    font-family: "Poppins Thin";
-    text-align: center;
-    letter-spacing: 3px;
-    color: #404146;
-  }
-  
-  .copy-container span {
+
+  .top-wrapper span {
     font-family: Georgia;
     font-size: 110px;
     color: #F1D00E;
   }
 
-  .copy-container img {
+  .top-wrapper h2 {
+    font-size: 50px;
+    font-family: "Poppins Thin";
+    letter-spacing: px;
+    color: #535353;
+  }
+  
+  .top-wrapper img {
     position: relative;
     width: 15%;
-    left: 725px;
-    padding-bottom: 60px;
   }
 
   /* Bagian Tentang Saya */
 
   .lesson-wrapper {
-    height: auto;
-    width: auto;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
+    padding-left: 20%;
+    padding-right: 20%;
     background-color: #f7f7f7;
     text-align: center;
-  }
-
-  .container {
-    width: 1100px;
-    padding: 0 15px;
-    margin: 0 auto;
   }
 
   .heading {
@@ -100,45 +122,44 @@ body {
 
   /* Bagian Proyek Contoh */
 
-  .contents {
-    height: 500px;
-    margin-top: 100px;
-  }
-  
-  .section-title {
-    font-family: Poppins;
-    font-size: 25px;
-    padding-bottom: 15px;
-    margin-bottom: 1px;
+  .contents-wrapper {
+    padding-bottom: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
     text-align: center;
   }
   
-  .contents-item {
-    position: relative;
-    float: left;
-    width: 16%;
-    left: 345px;
-    padding: 50px 50px;
-    margin: 0 auto;
-  }
-  
-  .contents-item img {
-    position: relative;
-    width: 100%;
+  .heading h3 {
+    font-size: 24px;
+    font-family: Poppins;
+    color: #5f5d60;
   }
 
+  .content {
+    float: left;
+    width: 33%;
+  }
+
+  .contents-item {
+    position: relative;
+    padding: 15px 30px;
+  }
+
+  .contents-item img {
+    width: 100%;
+  }
   .contents-item p {
-    font-size: 24px;
-    margin-top: 30px;
-    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #000000;
   }
   
   /* Bagian Contact Form */
-  .contact-form {
-    height: 500px;
-    text-align: center;
-    padding-top: 80px;
+  .message-wrapper {
+    padding-bottom: 80px;
     background-color: #f7f7f7;
+    text-align: center;
   }
   
   /* Tambahkan CSS untuk tags <input> dan <textarea> */
@@ -159,10 +180,10 @@ body {
     border-radius: 10px;
   }
  /* Bagian Footer */ 
-  .footer {
+  footer {
     background-color: #7C7D82;
     color: #fff;
-    height: 120px;
+    height: 190px;
     padding: 40px;
   }
   

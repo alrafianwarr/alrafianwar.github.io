@@ -58,26 +58,76 @@
             </div>
             <div class="contents">
               <div class="content">
-                <div class="contents-item">
-                  <img src="img/1.png">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/1.png">
                   <p>Image 1</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/1.png">
+                  </div>
+                  <div id="caption"></div>
                 </div>
               </div>
               <div class="content">
-                <div class="contents-item">
-                  <img src="img/2.png">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/2.png">
                   <p>Image 2</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/2.png">
+                  </div>
+                  <div id="caption"></div>
                 </div>
               </div>
               <div class="content">
-                <div class="contents-item">
-                  <img src="img/3.png">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/3.png">
                   <p>Image 3</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/3.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/gurudomba.png">
+                  <p>Image 4</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/gurudomba.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/gurudomba-flying.png">
+                  <p>Image 5</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/gurudomba-flying.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/happy-ninjaken.png">
+                  <p>Image 6</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/happy-ninjaken.png">
+                  </div>
+                  <div id="caption"></div>
                 </div>
               </div>
               <div class="clear"></div>
             </div>
           </div>
+          <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+          <a class="next" onclick="updateSlide(1)">&#10095;</a>
         </div>
         
         <div class="message-wrapper">
@@ -85,9 +135,55 @@
             <div class="heading">
               <h3>Hubungi Saya</h3>
             </div>
-            <input type="text" placeholder="Email (Diperlukan)"><br>
-            <textarea placeholder="Message (Diperlukan)"></textarea><br>
-            <input class="contact-submit" type="submit" value="Kirim" />
+            <div class="email">
+              <input type="text" placeholder="Email (Diperlukan)" id="email"><br>
+            </div>
+            <div class="message-box">
+              <textarea id="msg" placeholder="Message (Diperlukan)"></textarea><br>
+            </div>
+            <div class="button">
+              <input id="send" onclick="message()" class="contact-submit" type="submit" value="Kirim"/>
+            </div>
+            <div class="message">
+              <div class="success" id="success"> Your Message Sucessfully Sent!</div>
+              <div class="danger" id="danger"> Field Can't be Empty!</div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-wrapper">
+          <div class="container">
+            <center><h1 class="faq-heading">FAQ'S</h1></center>
+            <section class="faq-container">
+              <div class="faq-one">
+                <h1 class="faq-page">What is an FAQ Page?</h1>
+                <div class="faq-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam.
+                    Perspiciatis, porro!</p>
+                </div>
+              </div>
+              <hr class="hr-line">
+              <div class="faq-two">
+                <h1 class="faq-page">Why do you need an FAQ page?</h1>
+                <div class="faq-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam.
+                    Perspiciatis, porro!</p>
+                </div>
+              </div>
+              <hr class="hr-line">
+              <div class="faq-three">
+                <h1 class="faq-page">Does it improves the user experience of a website?</h1>
+                <div class="faq-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam.
+                    Perspiciatis, porro!</p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -104,5 +200,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

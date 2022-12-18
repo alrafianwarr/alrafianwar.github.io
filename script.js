@@ -40,7 +40,7 @@ document.addEventListener("click", (e) => {
       modalImg.src = elem.dataset.biggerSrc || elem.src;
       captionText.innerHTML = elem.alt; 
     }
-  })
+  });
 
 var span = document.getElementsByClassName("close")[0];
 

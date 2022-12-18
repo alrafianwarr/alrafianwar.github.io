@@ -1,227 +1,205 @@
-  * {
-  box-sizing: border-box;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ini adalah Frontend Developer Course">
+    <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, React, Git">
+    <meta name="author" content="Guru Domba">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="path-to-the-image" />
+    <meta property="og:url" content="https://progate.com/" />
+    <meta property="og:title" content="Progate | Learn to code..." />
+    <meta property="og:description" content="Progate is an online platform..." />
+    <title>NINJA KEN</title>
+    <link rel="icon" href="img/Ninja.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Bagian Header -->
+  <header>
+    <div class="container">
+        <div class="header-logo"><b>NINJA KEN</b></div>
+        <span class="fa fa-bars menu-icon"></span>
+        <div class="header-list">
+          <a href="#">Tentang Saya</a>
+          <a href="#">Proyek Contoh</a>    
+          <a href="#">Hubungi Saya</a>
+        </div>
+      </div>
+    </header>
+<!--Bagian Main -->
+      <div class="top-wrapper">
+        <div class="container">
+          <h1>NINJA KEN<span>.</span></h1>
+          <h2>MY PORTFOLIO</h2>
+          <div class="zoom-effect">
+            <img src="img/Ninja.png" alt="">
+          </div>
+        </div>
+      </div>
 
-  body {
-    margin: 0;
-    font-family: sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+      <div class="lesson-wrapper">
+        <div class="container">
+          <div class="heading">
+            <h2>Tentang Saya</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          </div>
+        </div>
 
-  li {
-    list-style: none;
-  }
-
-  .clear {
-    clear: left;
-  }
-
-  .container {
-    max-width: 100%;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-  
-  @keyframes zoom-in-out {
-    from {transform: scale(0.5)}
-    to {transform: scale(0.9)}
-  }
-  
-  /* Bagian Header Logo*/
-  
-  header {
-    background-color: #404146;
-    color: #fff;
-    height: 90px;
-    width: 100%;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .header-logo {
-    float: left;
-    font-size: 27px;
-    letter-spacing: 7px;
-    padding: 30px 30px;
-  }
-  
-  .header-list {
-    float: left;
-    padding: 35px 20px;
-  }
-
-  .header-list a {
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-
-  .header-list a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  .menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 35px 0;
-    /* Gantikan property display ke none */
-    display: none;
-  }
-  
-  /* Bagian Ninja Ken Content Header */
-
-  .top-wrapper {
-    padding: 50px 0 50px 0;
-    color: white;
-    text-align: center;
-    transition: all 0.5s;
-  }
-
-  .top-wrapper h1 {
-    font-size: 140px;
-    color: #404146;
-  }
-
-  .top-wrapper span {
-    font-family: Georgia;
-    font-size: 110px;
-    color: #F1D00E;
-  }
-
-  .top-wrapper h2 {
-    font-size: 50px;
-    font-family: "Poppins Thin";
-    letter-spacing: px;
-    color: #535353;
-  }
-  
-  .top-wrapper img {
-    animation-name: zoom-in-out;
-    animation-duration: 2s;
-    animation-iteration-count: inherit;
-    position: relative;
-    width: 300px;
-    -webkit-transition: 0.4s ease;
-    transition: all 1 ease;
-    transform: scale(0.9) rotate(360deg);
-    -webkit-animation:zoom-in-out 2s; /* Safari dan Chrome */
-    -moz-animation:zoom-in-out 2s; /* Firefox */
-    -ms-animation:zoom-in-out 2s; /* Internet Explorer */
-    -o-animation:zoom-in-out 2s; /* Opera */
-    animation:zoom-in-out 2s; /* W3C */
-  }
-
-  .top-wrapper:hover .zoom-effect img {
-    -webkit-transform: scale(1.08);
-    transform: scale(1.08);
-    filter: grayscale(1);
-  }
-
-  /* Bagian Tentang Saya */
-
-  .lesson-wrapper {
-    padding-bottom: 70px;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: #f7f7f7;
-    text-align: center;
-  }
-
-  .heading {
-    padding-top: 60px;
-    padding-bottom: 20px;
-    color: #5f5d60;
-  }
-  
-  .heading h2 {
-    font-family: Poppins;
-  }
-
-  /* Bagian Proyek Contoh */
-
-  .contents-wrapper {
-    padding-bottom: 100px;
-    padding-left: 20%;
-    padding-right: 20%;
-    text-align: center;
-  }
-  
-  .heading h3 {
-    font-size: 24px;
-    font-family: Poppins;
-    color: #5f5d60;
-  }
-
-  .content {
-    float: left;
-    width: 33%;
-  }
-
-  .contents-item {
-    position: relative;
-    padding: 15px 30px;
-  }
-
-  .contents-item img {
-    width: 100%;
-  }
-  .contents-item p {
-    display: inline-block;
-    margin-top: 15px;
-    font-size: 20px;
-    color: #000000;
-  }
-  
-  /* Bagian Contact Form */
-  .message-wrapper {
-    padding-bottom: 80px;
-    background-color: #f7f7f7;
-    text-align: center;
-  }
-  
-  /* Tambahkan CSS untuk tags <input> dan <textarea> */
-  input, textarea {
-    width: 700px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid #dee7ec;
-  }
-  
-  /* Tambahkan CSS untuk contact-submit */
-  .contact-submit {
-    background-color: #F7E989;
-    color: #000000;
-    width: 350px;
-    border-radius: 10px;
-  }
- /* Bagian Footer */ 
-  footer {
-    background-color: #7C7D82;
-    color: #fff;
-    height: 190px;
-    padding: 40px;
-  }
-  
-  .footer-logo {
-    float: left;
-    font-size: 32px;
-    letter-spacing: 7px;
-    font-weight: bold;
-  }
-  
-  .footer-list {
-    float: right;
-  }
-  
-  .footer-list li {
-    padding-bottom: 20px;
-  }
-  
+        <div class="contents-wrapper">
+          <div class="container">
+            <div class="heading">
+              <h3>Proyek Contoh</h3>
+            </div>
+            <div class="contents">
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/1.png">
+                  <p>Image 1</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/1.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/2.png">
+                  <p>Image 2</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/2.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/3.png">
+                  <p>Image 3</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/3.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/gurudomba.png">
+                  <p>Image 4</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/gurudomba.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/gurudomba-flying.png">
+                  <p>Image 5</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/gurudomba-flying.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="contents-item fade">
+                  <img id="myImg" class="img-fluid" src="img/happy-ninjaken.png">
+                  <p>Image 6</p>
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" class="modal-content" src="img/happy-ninjaken.png">
+                  </div>
+                  <div id="caption"></div>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+          <a class="next" onclick="updateSlide(1)">&#10095;</a>
+        </div>
+        
+        <div class="message-wrapper">
+          <div class="container">
+            <div class="heading">
+              <h3>Hubungi Saya</h3>
+            </div>
+            <div class="email">
+              <input type="text" placeholder="Email (Diperlukan)" id="email"><br>
+            </div>
+            <div class="message-box">
+              <textarea id="msg" placeholder="Message (Diperlukan)"></textarea><br>
+            </div>
+            <div class="button">
+              <input id="send" onclick="message()" class="contact-submit" type="submit" value="Kirim"/>
+            </div>
+            <div class="message">
+              <div class="success" id="success"> Your Message Sucessfully Sent!</div>
+              <div class="danger" id="danger"> Field Can't be Empty!</div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-wrapper">
+          <div class="container">
+            <center><h1 class="faq-heading">FAQ'S</h1></center>
+            <section class="faq-container">
+              <div class="faq-one">
+                <h1 class="faq-page">What is an FAQ Page?</h1>
+                <div class="faq-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam.
+                    Perspiciatis, porro!</p>
+                </div>
+              </div>
+              <hr class="hr-line">
+              <div class="faq-two">
+                <h1 class="faq-page">Why do you need an FAQ page?</h1>
+                <div class="faq-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam.
+                    Perspiciatis, porro!</p>
+                </div>
+              </div>
+              <hr class="hr-line">
+              <div class="faq-three">
+                <h1 class="faq-page">Does it improves the user experience of a website?</h1>
+                <div class="faq-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                    necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                    aperiam.
+                    Perspiciatis, porro!</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+<!-- Bagian Footer -->
+  <footer>
+      <div class="container">
+        <div class="footer-logo">NINJA KEN</div>
+        <div class="footer-list">
+          <ul>
+            <li>Tentang Saya</li>
+            <li>Proyek Contoh</li>
+            <li>Hubungi Saya</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
